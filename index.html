@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面布局示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 5px 10px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            color: blue;
+        }
+
+        .search-bar {
+            width: 200px;
+            height: 30px;
+            margin-bottom: 20px;
+            border: 1px solid blue;
+            border-radius: 15px;
+            padding-left: 10px;
+        }
+
+        .recommendations {
+            border: 2px solid lawngreen;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .list {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid orange;
+        }
+
+        .sections {
+            display: flex;
+            gap: 20px;
+        }
+
+        .section {
+            border: 2px solid purple;
+            padding: 10px;
+            width: 100px;
+            height: 150px;
+        }
+
+        .tiffany-blue {
+            color: #0ABAB5;
+            font-family: "SimSun", serif;
+            font-weight: bold;
+        }
+
+        .rolex-green {
+            color: #90EE90; /* 近似劳力士绿色，实际可根据需求调整 */
+            font-family: "FangSong", serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p><span style="color: red;">番茄</span> <input type="text" class="search-bar" placeholder="搜索"></div>
+    </div>
+
+    <div class="tabs">
+        <span class="tab">视频</span>
+        <span class="tab">推荐</span>
+        <span class="tab">小说</span>
+        <span class="tab">经典</span>
+        <span class="tab">听书</span>
+    </div>
+
+    <div class="recommendations">
+        <p>推荐榜 完结榜 巅峰榜 完整榜单→</p>
+        <div class="list">1. 红楼梦</div>
+        <div class="list">2. 西游记</div>
+        <div class="list">3. 三国演义</div>
+        <div class="list">4. 水浒传</div>
+    </div>
+
+    <div class="sections">
+        <div class="section">
+            <p>重生文</p>
+            <p>女将星</p>
+        </div>
+        <div class="section">
+            <p class="rolex-green">灯花笑</p>
+        </div>
+    </div>
+
+    <p>书城 短剧 签到 书架 我的</p>
+    <p class="tiffany-blue">最后一段文字</p>
+</body>
+</html>
